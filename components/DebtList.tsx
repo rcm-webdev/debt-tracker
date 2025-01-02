@@ -35,7 +35,7 @@ export const DebtList = () => {
         <div className="flex flex-row items-center mt-4">
           <p className="font-semibold ">
             Hello player number <span className="text-success">456</span>, ready
-            to pay off your debt?
+            to pay off your remaining <span className="text-error">debt</span>?
           </p>
         </div>
       </div>
@@ -61,6 +61,7 @@ export const DebtList = () => {
                 <th>Type</th>
                 <th>Amount</th>
                 <th>Pay off debt</th>
+                <th>Curious?</th>
               </tr>
             </thead>
             <tbody>
@@ -72,6 +73,15 @@ export const DebtList = () => {
                 <td>
                   <button className="btn btn-primary">{icons.wallet}</button>
                 </td>
+                <td>
+                  <label className="label cursor-pointer">
+                    <input
+                      type="checkbox"
+                      className="toggle toggle-primary"
+                      defaultChecked
+                    />
+                  </label>
+                </td>
               </tr>
               {/* row 2 */}
               <tr>
@@ -80,6 +90,15 @@ export const DebtList = () => {
                 <td className="text-error">₩40,000,000,000</td>
                 <td>
                   <button className="btn btn-primary">{icons.wallet}</button>
+                </td>
+                <td>
+                  <label className="label cursor-pointer">
+                    <input
+                      type="checkbox"
+                      className="toggle toggle-primary"
+                      defaultChecked
+                    />
+                  </label>
                 </td>
               </tr>
 
@@ -90,6 +109,15 @@ export const DebtList = () => {
                 <td className="text-error">₩600,000,000</td>
                 <td>
                   <button className="btn btn-primary">{icons.wallet}</button>
+                </td>
+                <td>
+                  <label className="label cursor-pointer">
+                    <input
+                      type="checkbox"
+                      className="toggle toggle-primary"
+                      defaultChecked
+                    />
+                  </label>
                 </td>
               </tr>
             </tbody>
