@@ -77,6 +77,12 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <div>
+        <h2 className="font-semibold text-xl text-center my-4">
+          Hello player number <span className="text-success">456</span>, ready
+          to pay off your remaining <span className="text-error">debt</span>?
+        </h2>
+      </div>
       {/* Main Section  */}
       <DebtList />
     </div>
