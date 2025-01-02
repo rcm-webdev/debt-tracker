@@ -57,19 +57,18 @@ export default function Home() {
   ];
   return (
     <div className="mx-auto max-w-2xl">
-      <div className="flex flex-col-reverse items-center p-4 ">
+      <div className="flex flex-col items-center p-4 ">
         <h1 className="text-6xl font-bold">
           {" "}
           <span className="text-[#f44786]">Debt</span> Tracker{" "}
         </h1>
 
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center space-x-2 ">
+          <p className="font-semibold">
+            Inspired by <span className="text-[#249f9c]">Squid Games</span>{" "}
+          </p>
           {symbols.map((symbol) => (
-            <div
-              className={` p-2 rounded-lg w-16 h-16  `}
-              key={symbol.key}
-              style={{ backgroundColor: "var(--color-" + symbol.color + ")" }}
-            >
+            <div className={` rounded-lg w-5 h-5  `} key={symbol.key}>
               {symbol.symbol}
             </div>
           ))}
