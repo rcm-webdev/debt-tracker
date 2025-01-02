@@ -32,12 +32,6 @@ export const DebtList = () => {
           value="50"
           max="100"
         ></progress>
-        <div className="flex flex-row items-center mt-4">
-          <p className="font-semibold ">
-            Hello player number <span className="text-success">456</span>, ready
-            to pay off your remaining <span className="text-error">debt</span>?
-          </p>
-        </div>
       </div>
       {/* <div>
         <select className="select select-ghost w-full max-w-xs">
