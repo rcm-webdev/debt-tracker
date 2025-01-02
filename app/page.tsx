@@ -1,3 +1,5 @@
+import DebtList from "@/components/DebtList";
+
 export default function Home() {
   const symbols = [
     {
@@ -57,23 +59,26 @@ export default function Home() {
   ];
   return (
     <div className="mx-auto max-w-2xl">
+      {/* Header Section  */}
       <div className="flex flex-col items-center p-4 ">
         <h1 className="text-6xl font-bold">
           {" "}
-          <span className="text-[#f44786]">Debt</span> Tracker{" "}
+          <span className="text-primary">Debt</span> Tracker{" "}
         </h1>
 
         <div className="flex flex-row items-center space-x-2 ">
           <p className="font-semibold">
-            Inspired by <span className="text-[#249f9c]">Squid Games</span>{" "}
+            Inspired by <span className="text-success">Squid Games</span>{" "}
           </p>
           {symbols.map((symbol) => (
-            <div className={` rounded-lg w-5 h-5  `} key={symbol.key}>
+            <div className={` rounded-lg w-5 h-5`} key={symbol.key}>
               {symbol.symbol}
             </div>
           ))}
         </div>
       </div>
+      {/* Main Section  */}
+      <DebtList />
     </div>
   );
 }
